@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- SETUP BOOTSTAP: link to Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- link to JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<!-- Add style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Quiz#1: Javascript Operators</title>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		document.write("<h1>JavaScript Operators</h1>")
+	</script>
+
+<form>
+<div class="alert alert-info">
+    <h3>Given: if A = 30.27, and B = 6.18, compute for the following:</h3>
+  </div>
+
+<!-- Arithmetic -->
+<div class="container-fluid mt-3">
+<div class="col-sm-3 p-3 bg-info" style="width:400px">
+	 <div class="card-body">
+      <h4 class="card-title">Arithmetic Operators</h4>
+<button type="button" class="btn btn-warning mb-2" onclick="
+	var a=30.27;
+	var b=6.18;
+	var c= a**b;
+	var round_c=c.toFixed(2); // will round off to two decimal places
+	document.getElementById('exponent').innerHTML='The answer is: '  + round_c ">Show Answer</button>
+
+<div class="alert alert-info">
+  	<h3 id="exponent">Exponent:</h3>
+  </div>
+
+
+<button type="button" class="btn btn-warning mb-2" onclick="
+	var a= 30.27;
+	var b = 6.18;
+	var c= a % b;
+	var round_c=c.toFixed(2); // will round off to two decimal places
+	document.getElementById('modulo').innerHTML='The answer is '  + round_c + ''">Show Answer</button>
+
+ <div class="alert alert-info">
+  	<h3 id="modulo">Modulo:</h3>
+  </div>
+  </div>
+</div>
+  <br>
+
+<!-- Comparison -->
+<div class="container-fluid mt-3">
+<div class="col-sm-3 p-3 bg-info" style="width:400px">
+	 <div class="card-body">
+      <h4 class="card-title">Comparison Operators</h4>
+ <button type="button" class="btn btn-warning mb-2" onclick="
+	var a=30.27;
+	var b= 6.18;
+	var c= ;
+	var round_c=c.toFixed(2); // will round off to two decimal places
+	document.getElementById('comparison').innerHTML='The answer is '  + round_c + ''">Show Answer</button>
+
+<div class="alert alert-info">
+  	<h3 id="comparison">Is <kbd>30.27</kbd> greater than <kbd>6.18</kbd>?:</h3>
+  	<h3 id="comparison">Is <kbd>30.27</kbd> equal to <kbd>6.18</kbd>?</h3>
+  </div>
+   </div>
+</div>
+  <br>
+
+
+<!-- Logical -->
+ <div class="container-fluid mt-3">
+<div class="col-sm-3 p-3 bg-info" style="width:400px">
+	 <div class="card-body">
+      <h4 class="card-title">Logical Operators</h4>
+<button type="button" class="btn btn-warning mb-2" onclick="
+	var a=30.27;
+	var b=6.18;
+	var c= (a <= b) && (a >= b);
+	document.getElementById('logical A').innerHTML=' (a <= b) && (a >= b): ' + c ">Show Answer</button>
+
+<div class="alert alert-info">
+  	<h3 id="logical A">(a <= b) && (a >= b):</h3>
+  </div>
+
+  
+<button type="button" class="btn btn-warning mb-2" onclick="
+	var a=30.27;
+	var b=6.18;
+	var c= (a != b) || (a == b);
+	document.getElementById('logical B').innerHTML=' (a != b) || (a == b): ' + c ">Show Answer</button>
+
+<div class="alert alert-info">
+  	<h3 id="logical B">(a != b) || (a == b)</h3>
+  </div>
+
+  </div>
+</div>
+<br>
+
+ <button type="button" class="btn btn-warning" onClick="window.location.reload()">Refresh</button>
+</form>
+<hr>
+		
+		<div class="footer">
+			<p>Skyler Greice Immaya A. Escobar | 9-Topaz</p>
+		</div>
+
+</body>
+</html>
